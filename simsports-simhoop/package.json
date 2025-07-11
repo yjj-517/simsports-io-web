@@ -1,0 +1,41 @@
+{
+	"name": "sim-hoop",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"serve": "vite --host --mode env",
+		"build": "tsc && vite build --mode env",
+		"dev": "vite --host --mode development",
+		"build:dev": "tsc && vite build --mode development",
+		"pro": "vite --host --mode production",
+		"build:pro": "tsc && vite build --mode production",
+		"preview": "vite preview --host"
+	},
+	"dependencies": {
+		"antd": "^5.12.8",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-router-dom": "^6.21.1",
+		"react-slick": "^0.29.0",
+		"slick-carousel": "^1.8.1"
+	},
+	"devDependencies": {
+		"@types/node": "^20.10.8",
+		"@types/react": "^18.2.43",
+		"@types/react-dom": "^18.2.17",
+		"@types/react-router": "^5.1.20",
+		"@types/react-router-dom": "^5.3.3",
+		"@typescript-eslint/eslint-plugin": "^6.14.0",
+		"@typescript-eslint/parser": "^6.14.0",
+		"@vitejs/plugin-react": "^4.2.1",
+		"eslint": "^8.55.0",
+		"eslint-plugin-react-hooks": "^4.6.0",
+		"eslint-plugin-react-refresh": "^0.4.5",
+		"less": "^4.2.0",
+		"less-loader": "^11.1.4",
+		"terser": "^5.26.0",
+		"typescript": "^5.2.2",
+		"vite": "^5.0.8"
+	}
+}

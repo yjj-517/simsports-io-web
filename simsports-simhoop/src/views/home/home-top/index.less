@@ -1,0 +1,27 @@
+.home-top {
+	position: relative;
+	min-width: 12rem;
+	height: 9.6rem;
+	overflow: hidden;
+	.home-bg {
+		width: 19.2rem;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		.top-bg {
+			.w-h(19.2rem,9.6rem);
+		}
+	}
+	.content {
+		.mixin-flex(column,flex-start,center,nowrap);
+		.simhoop-logo {
+			margin-top: 2rem;
+			width: 10.16rem;
+		}
+		.top-text {
+			margin-top: 0.48rem;
+			font-size: 0.32rem;
+			line-height: 0.4rem;
+		}
+	}
+}

@@ -1,0 +1,43 @@
+.home-team {
+	padding: 1.6rem 0 1.6rem 0;
+	.fillet-paragraph-text02 {
+		width: 10.8rem;
+		margin: 0 auto;
+	}
+	.team-text01 {
+		margin-top: 0.4rem;
+	}
+	.team-text02 {
+		margin-top: 0.24rem;
+	}
+	.team-list {
+		margin-top: 1.2rem;
+		.mixin-flex (row,space-between,flex-start,nowrap);
+		.list-box {
+			.w-h(2.7rem,5.2rem);
+			position: relative;
+			&:nth-child(2n) {
+				margin-top: 0.5rem;
+			}
+			.team-list-img {
+				.w-h(2.7rem,5.2rem);
+				position: absolute;
+			}
+			.team-list-box {
+				position: relative;
+				margin: 4.32rem auto 0;
+				text-align: center;
+				.name-title {
+					color: @COLOR_0;
+					font-size: 0.24rem;
+					line-height: 0.32rem;
+				}
+				.introduce-text {
+					color: @COLOR_0;
+					font-size: 0.18rem;
+					line-height: 0.24rem;
+				}
+			}
+		}
+	}
+}

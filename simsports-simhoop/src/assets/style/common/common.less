@@ -1,0 +1,99 @@
+// 公用边距
+.main {
+	width: 12rem;
+	margin: 0 auto;
+	position: relative;
+}
+// 公用标题
+h2.fillet-h2-title {
+	font-size: 0.36rem;
+	font-family: Quantico;
+	color: @COLOR_THEME;
+	line-height: 0.36rem;
+}
+// 公用小标题
+h3.fillet-h3-title {
+	font-size: 0.28rem;
+	color: @COLOR_THEME;
+	line-height: 0.28rem;
+}
+// 公用段落文字
+p.fillet-paragraph-text {
+	font-size: 0.16rem;
+	color: @COLOR_9;
+	line-height: 0.24rem;
+}
+// 公用段落文字
+p.fillet-paragraph-text02 {
+	font-size: 0.16rem;
+	color: @COLOR_C;
+	line-height: 0.24rem;
+}
+// 公用段落文字
+p.fillet-paragraph-text03 {
+	font-size: 0.14rem;
+	color: @COLOR_6;
+	line-height: 0.24rem;
+}
+// 公用菱形按钮
+button.fillet-diamond-button {
+	background-color: @COLOR_THEME;
+	color: @COLOR_F;
+	width: 100%;
+	font-family: Quantico;
+	font-weight: bold;
+	&:hover {
+		background-image: linear-gradient(to right, #6ba300, #40b218);
+	}
+}
+// 公用菱形小号按钮
+button.fillet-diamond-button-trumpet {
+	background-color: @COLOR_THEME;
+	color: @COLOR_F;
+	width: 100%;
+	&:hover {
+		background-image: linear-gradient(to right, #6ba300, #40b218);
+	}
+}
+// 公用圆角按钮
+button.fillet-button {
+	width: 100%;
+	height: 0.6rem;
+	color: @COLOR_F;
+	background-color: @COLOR_THEME;
+	font-size: 0.28rem;
+	font-family: Quantico;
+	font-weight: bold;
+	border-radius: @BORDER_RADIUS;
+	&:hover {
+		box-shadow: @BOX_SHADOW;
+	}
+	// 加载loading大小
+	.icon-loading-button {
+		font-size: 0.32rem;
+	}
+}
+// 公用圆角按钮小号
+button.fillet-button-trumpet {
+	padding: 0.1rem 0;
+	color: @COLOR_F;
+	background-color: @COLOR_THEME;
+	font-size: 0.14rem;
+	border-radius: 0.02rem;
+	&:hover {
+		color: @COLOR_THEME;
+		background-color: @COLOR_F;
+	}
+}
+// 公用圆角按钮小号空心
+button.fillet-button-hollow {
+	padding: 0.09rem 0;
+	color: @COLOR_THEME;
+	border: 0.01rem solid @COLOR_THEME;
+	font-size: 0.14rem;
+	border-radius: 0.02rem;
+	&:hover {
+		color: @COLOR_F;
+		background-color: @COLOR_THEME;
+	}
+}

@@ -1,0 +1,83 @@
+.game-palyer {
+	position: relative;
+	min-width: 12rem;
+	height: 10.8rem;
+	overflow: hidden;
+	.game-palyer-bg {
+		width: 19.2rem;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		.game-palyer-bg-img {
+			.w-h(19.2rem,10.8rem);
+			opacity: 0.15;
+		}
+	}
+	.main {
+		.game-palyer-title {
+			margin-top: 0.64rem;
+			.mixin-flex (row,flex-start,center,nowrap);
+			.icon-left {
+				font-size: 0.28rem;
+				cursor: pointer;
+			}
+			.game-palyer-title-img {
+				height: 1.68rem;
+			}
+		}
+		.game-palyer-slider {
+			margin-top: -0.16rem;
+			position: relative;
+			width: 12rem;
+			.swiper-box {
+				width: 100%;
+				.center {
+					.mixin-flex (row,center,center,nowrap);
+					.player-people-img {
+						width: 12rem;
+					}
+				}
+			}
+		}
+	}
+	.game-palyer-change {
+		height: 1.8rem;
+		margin: 0 auto;
+		position: relative;
+		min-width: 12rem;
+		max-width: 19.2rem;
+		.mixin-flex (column,center,center,nowrap);
+		.palyer-avatar-box {
+			.mixin-flex (row,center,center,nowrap);
+			.icon-change {
+				.w-h(0.4rem,0.4rem);
+				margin: 0 0.38rem;
+				cursor: pointer;
+			}
+			.palyer-avatar-list {
+				width: 7.5rem;
+				.mixin-flex (row,center,center,nowrap);
+				.game-avatar-slider {
+					width: 100%;
+					.swiper-box {
+						width: 100%;
+						.center {
+							.mixin-flex (row,center,center,nowrap);
+							.palyer-avatar-img {
+								.w-h(0.92rem,0.92rem);
+								border: 0.04rem solid #999;
+								border-radius: 0.08rem;
+								margin: 0 0.25rem;
+								cursor: pointer;
+								opacity: 0.6;
+								&:hover {
+									opacity: 1;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
