@@ -1,0 +1,36 @@
+/* tailwind.css */
+
+/* 引入tailwind-css */
+@import "tailwindcss";
+/* 引入或者自定义深色模式 */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* 添加或者重置项目的自定义设计标记 */
+@theme {
+	/* 使用 --属性-*： initial 完全禁用所有默认值并定义默认值 */
+	/* 使用 --属性-*： 属性值 自定义或者覆盖默认值 */
+
+	/* family */
+	--font-*: initial;
+	--font-primary: Oswald, Arial;
+	--font-regular: Arial;
+
+	/* responsive-design  */
+	--breakpoint-*: initial;
+	--breakpoint-sm: 480px;
+	--breakpoint-md: 768px;
+	--breakpoint-lg: 976px;
+	--breakpoint-xl: 1440px;
+
+	/* color */
+	--color-primary: ;
+	--color-regular: ;
+	--color-secondary: ;
+	--color-disabled: ;
+
+	/* color-bg */
+	--color-bgcolor-100: #070707;
+
+	/* color-text */
+	--color-text-100: #999999;
+}

@@ -1,0 +1,36 @@
+/* animate.css */
+
+/* 广告轮播条--left */
+@keyframes animation-left-01 {
+	from {
+		transform: translate(100%);
+	}
+	to {
+		transform: translate(-100%);
+	}
+}
+@keyframes animation-left-02 {
+	from {
+		transform: translate(0);
+	}
+	to {
+		transform: translate(-200%);
+	}
+}
+/* right */
+@keyframes animation-right-01 {
+	from {
+		transform: translate(-100%);
+	}
+	to {
+		transform: translate(100%);
+	}
+}
+@keyframes animation-right-02 {
+	from {
+		transform: translate(-200%);
+	}
+	to {
+		transform: translate(0);
+	}
+}
