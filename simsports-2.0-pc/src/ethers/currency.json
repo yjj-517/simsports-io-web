@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Ethereum Mainnet",
+    "url": "https://mainnet.infura.io/v3/",
+    "chainId": "1",
+    "currency": "Eth"
+  },
+  {
+    "name": "Goerli",
+    "url": "https://goerli.infura.io/v3/",
+    "chainId": "5",
+    "currency": "GoerliETH"
+  },
+  {
+    "name": "Sepolia Mainnet",
+    "url": "https://sepolia.infura.io/v3/",
+    "chainId": "11155111",
+    "currency": "SepoliaETH"
+  },
+  {
+    "name": "BNB Smart Chain (previously Binance Smart Chain Mainnet)",
+    "url": "https://bsc-dataseed.binance.org/",
+    "chainId": "56",
+    "currency": "BNB"
+  }
+]

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;1,200&display=swap"
+    rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LT8LQQHK0Z"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-LT8LQQHK0Z');
+  </script>
+  <title>
+    <%= title %>
+  </title>
+</head>
+
+<body>
+  <div id="app"></div>
+  <script>
+    // 获取到设备的宽度
+    var deviceWidth = document.documentElement.clientWidth;
+    // 根据比例计算出rem的数值
+    var X = deviceWidth * 100 / 1460;
+    if (X > 100) {
+      X = 100; // 为了避免图片失真，只缩小不放大
+    }
+    // 把最新计算的rem值设置给html标签
+    document.documentElement.style.fontSize = X + 'px';
+  </script>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>

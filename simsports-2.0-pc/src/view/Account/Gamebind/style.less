@@ -1,0 +1,73 @@
+.dialog_box {
+	width: 8rem;
+	margin: auto;
+	.title_box {
+		text-align: center;
+		font-size: 0.4rem;
+		color: @COLOR_Z;
+		font-weight: bold;
+	}
+	.title_unbind_text {
+		color: #a3a3a3;
+		font-size: 0.24rem;
+		line-height: 0.3rem;
+		margin-top: 0.6rem;
+		text-align: center;
+	}
+	.title_isunbind_text {
+		font-size: 0.3rem;
+		line-height: 0.4rem;
+		margin-top: 0.6rem;
+		font-weight: bold;
+	}
+	.wallet_box {
+		margin-top: 0.8rem;
+		font-size: 0.28rem;
+		p {
+			line-height: 0.36rem;
+			font-weight: bold;
+			&:nth-child(2) {
+				margin-top: 0.6rem;
+			}
+			span:nth-child(1) {
+				color: @COLOR_Z;
+				margin-right: 0.1rem;
+			}
+			span:nth-child(2) {
+				color: #666;
+			}
+		}
+	}
+	.wallet_box_unbind {
+		p {
+			&:nth-child(2) {
+				margin-top: 0.1rem;
+			}
+			&:nth-child(3) {
+				span {
+					color: #666;
+				}
+			}
+		}
+	}
+	.bind_but_box {
+		.mixin-flex(row,space-evenly,center,nowrap);
+		margin: 1rem 0 0.5rem;
+		button {
+			.w-h(1.6rem,0.46rem);
+			font-size: 0.28rem;
+			border-radius: 0.1rem;
+			&:nth-child(1) {
+				color: @COLOR_L;
+				background-color: @COLOR_Z;
+			}
+			&:nth-child(2) {
+				background-color: #b3b3b3;
+				color: #808080;
+			}
+			&.but_unbind {
+				.w-h(2rem,0.46rem);
+			}
+		}
+	}
+}
