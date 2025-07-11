@@ -1,0 +1,55 @@
+/* tailwind.css */
+
+/* 引入tailwind-css */
+@import "tailwindcss";
+/* 引入或者自定义深色模式 */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* 添加或者重置项目的自定义设计标记 */
+@theme {
+	/* 使用 --属性-*： initial 完全禁用所有默认值并定义默认值 */
+	/* 使用 --属性-*： 属性值 自定义或者覆盖默认值 */
+
+	/* responsive-design  */
+	--breakpoint-*: initial;
+	--breakpoint-sm: 480px;
+	--breakpoint-md: 768px;
+	--breakpoint-lg: 976px;
+	--breakpoint-xl: 1440px;
+
+	/* family */
+	--font-*: initial;
+	--font-primary: Oswald, Arial;
+
+	/* color */
+	--color-primary: #87cd00;
+	--color-regular: ;
+	--color-secondary: #00b4cd;
+	--color-disabled: #ff99ff;
+
+	/* color-bg */
+	--color-bgcolor-100: #060e1b;
+	--color-bgcolor-200: #101a29;
+
+	/* color-text */
+	--color-text-100: #cccccc;
+	--color-text-200: #999999;
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+	*,
+	::after,
+	::before,
+	::backdrop,
+	::file-selector-button {
+		border-color: var(--color-gray-200, currentcolor);
+	}
+}

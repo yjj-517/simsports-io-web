@@ -1,0 +1,18 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Mask group">
+<mask id="mask0_1241_7924" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+<rect id="Rectangle 624" width="24" height="24" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0_1241_7924)">
+<g id="icon_waiting">
+<path id="Vector" d="M12 21C7.035 21 3 16.965 3 12C3 7.035 7.035 3 12 3C12.825 3 13.5 3.675 13.5 4.5C13.5 5.325 12.825 6 12 6C8.685 6 6 8.685 6 12C6 15.315 8.685 18 12 18C15.315 18 18 15.315 18 12C18 11.565 17.955 11.145 17.865 10.725C17.685 9.915 18.21 9.12 19.02 8.94C19.83 8.76 20.625 9.285 20.805 10.095C20.925 10.71 21 11.355 21 12C21 16.965 16.965 21 12 21Z" fill="url(#paint0_angular_1241_7924)"/>
+</g>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_angular_1241_7924" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(12 12) rotate(-56.3099) scale(10.8167 10.806)">
+<stop stop-color="#808080"/>
+<stop offset="1" stop-color="#808080" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>

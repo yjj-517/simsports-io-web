@@ -1,0 +1,39 @@
+name: simsports app build test
+
+on:
+    push:
+        branches:
+            - "test"
+        paths-ignore:
+            - "./db/**"
+            - "**.md"
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v4
+            - name: Use Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version: "20.x"
+            - name: Run install
+              uses: borales/actions-yarn@v4
+              with:
+                  cmd: install # will run `yarn install` command
+
+            - name: Build production bundle
+              uses: borales/actions-yarn@v4
+              with:
+                  cmd: build:test # will run `yarn build:dev` command
+
+            - name: rsync deployments
+              uses: burnett01/rsync-deployments@5.0
+              with:
+                  switches: -avzr --delete
+                  path: dist/
+                  remote_path: /home/ubuntu/worker/simsports/frontend/faucet/
+                  remote_host: ${{ secrets.DEPLOY_IP_TEST }}
+                  remote_user: ubuntu
+                  remote_key: ${{ secrets.DEPLOY_KEY_TEST }}
