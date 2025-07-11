@@ -1,0 +1,24 @@
+/* global.css */
+
+@layer base {
+	/* 自定义默认的标签或tailwindcss中未定义的样式--能直接使用自定义的默认值 */
+	/* 重置的默认标签--如去除基本默认样式的可以放在这里--个人放在common.css中 */
+
+	/* --alpha 规范颜色的透明度 */
+
+	/* 滚动条 */
+	.trove-scrollbar {
+		overflow-y: auto;
+		overflow-x: auto;
+		scrollbar-width: thin;
+		scrollbar-color: --alpha(var(--color-regular) / 80%) var(--color-primary);
+	}
+}
+
+/* 自定义公共组件和公共样式 */
+@layer components {
+	/* 居中盒子 */
+	section.main {
+		@apply w-full max-w-[1440px] mx-auto  relative px-5 md:px-8 lg:px-12 overflow-hidden;
+	}
+}
