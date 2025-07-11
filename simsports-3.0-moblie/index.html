@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SimSports - The Future of WEB3 E-Sports Gaming</title>
+  <meta name="description"
+    content="SimSports is next generation web3 esports and gaming platform built on community governance and ownership of gaming assets." />
+  <meta name="keywords" content="Simsports,SimDunk,Game,Web3,NFT" />
+</head>
+
+<body>
+  <div id="app"></div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+<script>
+  // 获取到设备的宽度
+  var deviceWidth = document.documentElement.clientWidth;
+  // console.log(deviceWidth);
+  // 根据比例计算出rem的数值
+  var X = deviceWidth * 100 / 750;
+  if (X > 100) {
+    X = 100; // 为了避免图片失真，只缩小不放大
+  }
+  console.log(X);
+  // 把最新计算的rem值设置给html标签
+  document.documentElement.style.fontSize = X / 3.45 + 'px';
+</script>
+
+</html>
