@@ -1,0 +1,49 @@
+.home-build {
+	padding-top: 0.2rem;
+	padding-bottom: 0.66rem;
+	.home-build-content {
+		margin-top: 0.4rem;
+		.content-box {
+			width: 3.26rem;
+			padding: 0.16rem;
+			background-color: @COLOR_0;
+			border-radius: 0.04rem;
+			position: relative;
+			.home-build-title {
+				color: @COLOR_THEME;
+				line-height: 0.2rem;
+			}
+			.fillet-h3-title {
+				text-align: left;
+				font-size: 0.16rem;
+			}
+			.fillet-paragraph-text02 {
+				margin-top: 0.08rem;
+			}
+			.build-link {
+				margin-top: 0.12rem;
+				text-align: right;
+				button {
+					font-weight: bold;
+					color: @COLOR_THEME;
+					.icon-outline {
+						font-weight: bold;
+					}
+				}
+			}
+			.icon-downoutline {
+				position: absolute;
+				width: 0.24rem;
+				bottom: -0.1rem;
+				left: 50%;
+				transform: translateX(-50%);
+				cursor: pointer;
+			}
+		}
+		&:nth-of-type(6) {
+			.icon-downoutline {
+				transform: translateX(-50%) rotate(180deg);
+			}
+		}
+	}
+}

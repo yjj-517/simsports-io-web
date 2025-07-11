@@ -1,0 +1,59 @@
+.game-esports {
+	position: relative;
+	padding-bottom: 0.82rem;
+	.game-esports-bg-img {
+		width: 3.9rem;
+		opacity: 0.3;
+	}
+	.game-esports-box {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		.main {
+			padding-top: 0.8rem;
+			.fillet-h2-title {
+				text-align: left;
+			}
+			.fillet-paragraph-text02 {
+				margin-top: 0.08rem;
+			}
+			.fillet-h3-title {
+				margin-top: 0.64rem;
+				text-align: left;
+			}
+		}
+		.game-esports-rw {
+			width: 100%;
+			margin-top: 3.16rem;
+			height: 1.2rem;
+			background: linear-gradient(to bottom, rgba(@COLOR_0, 0.3) 0%, @COLOR_0 50%, rgba(@COLOR_0, 0.3) 100%);
+			.game-espoets-swiper {
+				padding-top: 0.2rem;
+				.game-swiper-box {
+					width: 100%;
+					.mixin-flex (row,flex-end,center,nowrap);
+					.game-rw-logo-img {
+						width: 0.8rem;
+						opacity: 0.3;
+						&.active {
+							opacity: 1;
+						}
+					}
+				}
+			}
+		}
+		.game-esports-rw-line {
+			margin-top: 0.16rem;
+			.mixin-flex (row,center,center, nowrap);
+			.list-box {
+				.w-h(0.16rem,0.02rem);
+				background-color: rgba(@COLOR_F, 0.3);
+				margin: 0 0.03rem;
+				&.active {
+					background-color: @COLOR_THEME;
+				}
+			}
+		}
+	}
+}

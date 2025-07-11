@@ -1,0 +1,102 @@
+.game-palyer {
+	position: relative;
+	.game-tab-bg {
+		width: 3.9rem;
+		opacity: 0.15;
+	}
+	.game-palyer-box {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 10;
+		.main {
+			margin-top: 0.48rem;
+		}
+		.icon-outline {
+			position: relative;
+			margin: 0.1rem 0 0 0.1rem;
+			font-size: 0.24rem;
+			cursor: pointer;
+			z-index: 100;
+		}
+		.game-palyer-slider {
+			margin-top: -0.12rem;
+			width: 100%;
+			position: relative;
+			.swiper-box {
+				.center {
+					.mixin-flex (column,flex-start,center,nowrap);
+					.game-palyer-img-box {
+						.w-h(3.56rem,3.1rem);
+						overflow: hidden;
+						.game-palyer-img {
+							width: 3.58rem;
+						}
+					}
+					.game-palyer-title {
+						margin-top: 0.2rem;
+						font-size: 0.26rem;
+						line-height: 0.26rem;
+					}
+					.fillet-paragraph-text02 {
+						margin-top: 0.04rem;
+					}
+					.fillet-paragraph-text04 {
+						margin-top: 0.08rem;
+						height: 1.6rem;
+						text-align: center;
+					}
+					.fillet-diamond-button {
+						margin-top: 0.3rem;
+						.w-h(1.8rem,0.4rem);
+						font-size: 0.18rem;
+						clip-path: polygon(0.1rem 0, 100% 0, 100% calc(100% - 0.1rem), calc(100% - 0.1rem) 100%, 0 100%, 0 0.1rem);
+					}
+					.fillet-diamond-button-disabled {
+						margin-top: 0.3rem;
+						.w-h(1.8rem,0.4rem);
+						font-size: 0.18rem;
+						clip-path: polygon(0.1rem 0, 100% 0, 100% calc(100% - 0.1rem), calc(100% - 0.1rem) 100%, 0 100%, 0 0.1rem);
+					}
+				}
+			}
+		}
+		.game-palyer-change {
+			margin-top: 0.4rem;
+			.mixin-flex (row,center,center,nowrap);
+			.icon-change {
+				width: 0.24rem;
+				&.icon-change-prev {
+					margin-right: 0.06rem;
+				}
+				&.icon-change-next {
+					margin-left: 0.06rem;
+				}
+			}
+			.game-avatar-swiper {
+				width: 2.96rem;
+				.game-avatar-slider {
+					.swiper-box {
+						.center {
+							.mixin-flex (row,center,center,nowrap);
+							.game-avatar-img {
+								width: 0.52rem;
+								border: 0.02rem solid #999;
+								opacity: 0.6;
+								border-radius: 0.08rem;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.game-palyer-bg {
+		height: 4.64rem;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+	}
+}

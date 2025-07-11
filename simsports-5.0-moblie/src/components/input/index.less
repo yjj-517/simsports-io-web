@@ -1,0 +1,95 @@
+// 公用input框
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+	font-size: 0.14rem !important;
+	-webkit-text-fill-color: #fff !important; //这个地方的颜色是字体颜色，可以根据实际情况修改
+	-webkit-box-shadow: 0 0 0px 1000px transparent inset !important; //设置input输入框的背景颜色为透明色
+	background-color: transparent; //设置input输入框的背景颜色为透明色
+	background-image: none;
+	transition: background-color 50000s ease-in-out 0s; //背景色透明  生效时长  过渡效果  启用时延迟的时间
+}
+input {
+	background-color: transparent;
+}
+#input-wrapper-box {
+	position: relative;
+	width: 3.24rem;
+	.input-wrapper {
+		height: 0.46rem;
+		font-size: 0.14rem;
+		padding: 0 0.12rem;
+		background-color: @COLOR_BC;
+		border-radius: @BORDER_RADIUS;
+		.mixin-flex (row, flex-start, center, nowrap);
+		&.input-success {
+			border: 0.01rem solid @COLOR_THEME;
+			&:hover {
+				box-shadow: 0 0 0.05rem 0 @COLOR_THEME;
+			}
+		}
+		&.input-warning {
+			border: 0.01rem solid @COLOR_W;
+			&:hover {
+				box-shadow: 0 0 0.05rem 0 @COLOR_W;
+			}
+		}
+		.input-box {
+			width: 100%;
+			height: 100%;
+			border: 0;
+			outline: none;
+			color: @COLOR_F;
+			background-color: #151c1d;
+		}
+		.input-line {
+			width: 0.01rem;
+			height: 0.16rem;
+			background: @COLOR_F;
+			opacity: 0.4;
+			margin-left: 0.12rem;
+		}
+		.input-button {
+			margin-left: 0.12rem;
+			&.code-text {
+				width: 2.34rem;
+			}
+			.icon-open {
+				font-size: 0.24rem;
+				color: @COLOR_F;
+			}
+			span {
+				color: @COLOR_THEME;
+				font-weight: bold;
+			}
+		}
+	}
+	// 报错框
+	.input-warning-box {
+		position: absolute;
+		margin-top: 0.04rem;
+	}
+	// 密码校验
+	.input-password-check-box {
+		.input-password-check-box-list {
+			margin-top: 0.04rem;
+			.mixin-flex (row,flex-start,center,nowrap);
+			.icon-check {
+				font-size: 0.12rem;
+				font-weight: bold;
+				&.icon-check-check {
+					color: @COLOR_THEME;
+				}
+				&.icon-check-error {
+					color: @COLOR_W;
+				}
+			}
+			.check-text {
+				font-size: 0.12rem;
+				&.check-color {
+					color: @COLOR_W;
+				}
+			}
+		}
+	}
+}

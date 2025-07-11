@@ -1,0 +1,50 @@
+.menu-box {
+	margin-left: 0.16rem;
+	.icon-menu {
+		width: 0.24rem;
+	}
+}
+.popup-menu-box {
+	width: 2.08rem;
+	padding: 0.2rem 0.16rem;
+	.menu-title {
+		.mixin-flex (row,space-between,center,nowrap);
+		.icon-img {
+			font-size: 0.18rem;
+			font-weight: bold;
+			color: #fff;
+		}
+		.simsports-img-white {
+			width: 1.45rem;
+			height: 0.24rem;
+		}
+	}
+	.dividing-line01 {
+		margin: 0.24rem 0;
+	}
+	.dividing-line02 {
+		margin: 0.32rem 0;
+	}
+	.menu-list-box {
+		.router-link-box {
+			margin: 0.32rem 0 0 0.2rem;
+			.nav-link {
+				font-weight: bold;
+				color: #fff;
+			}
+		}
+	}
+	.applink {
+		display: block;
+		margin: 0 auto;
+		.w-h(1.52rem,0.38rem);
+		clip-path: polygon(0.12rem 0, 100% 0, 100% calc(100% - 0.12rem), calc(100% - 0.12rem) 100%, 0 100%, 0 0.12rem);
+		.link-play {
+			.mixin-flex(row,center,center,nowrap);
+			color: @COLOR_F;
+			.link-img {
+				.w-h(0.24rem,0.24rem);
+			}
+		}
+	}
+}

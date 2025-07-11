@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <!-- 移动端缩放配置 -->
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <title>SimSports - The Future of WEB3 E-Sports Gaming</title>
+  <meta name="description"
+    content="SimSports is next generation web3 esports and gaming platform built on community governance and ownership of gaming assets." />
+  <meta name="keywords" content="Simsports,SimDunk,Game,Web3,NFT" />
+  <!-- 字体 -->
+  <link href="https://fonts.googleapis.com/css?family=Quantico" rel="stylesheet">
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+  <!-- Google tag (gtag.js) -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-MVEJ56Z0YR"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag() { dataLayer.push(arguments); }
+          gtag('js', new Date());
+          gtag('config', 'G-MVEJ56Z0YR');
+        </script>-->
+  <script type="text/javascript">
+    function adapter() {
+      // 获取到设备的宽度
+      const dip = document.documentElement.clientWidth;
+      // 计算根字体大小(100-自己指定/375-设计稿宽度)
+      const rootFontSize = (dip * 100) / 390
+      // 把最新计算的rem值设置给html标签
+      document.documentElement.style.fontSize = rootFontSize + 'px';
+    }
+    adapter();
+    window.onresize = () => {
+      adapter();
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+.home-partners {
+	padding-top: 0.9rem;
+	padding-bottom: 0.9rem;
+	.fillet-paragraph-text02 {
+		margin-top: 0.08rem;
+		text-align: center;
+	}
+	.partners-content {
+		margin-top: 0.64rem;
+		.content-list {
+			margin-top: 0.16rem;
+			&.content-list-left {
+				.mixin-flex (row,flex-start,center,nowrap);
+			}
+			&.content-list-right {
+				.mixin-flex (row,flex-end,center,nowrap);
+			}
+			.list-box {
+				.w-h(0.9rem,0.9rem);
+				background-color: #1c2324;
+				margin: 0 0.08rem;
+				clip-path: polygon(0.1rem 0, 100% 0, 100% calc(100% - 0.1rem), calc(100% - 0.1rem) 100%, 0 100%, 0 0.1rem);
+				position: relative;
+				&.color-l {
+					background-color: #59860c;
+				}
+				.soon-img {
+					width: 0.62rem;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					text-align: center;
+					font-size: 0.3rem;
+				}
+			}
+		}
+	}
+}

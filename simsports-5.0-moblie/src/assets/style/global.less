@@ -1,0 +1,120 @@
+/* 全局less公用变量，和less全局mixin函数
+并且sass也可以用这种方法,只是写法不同
+变量使用方法:color: @COLOR_C;
+mixin使用方法:
+无参数直接调用 .flx-center();
+有参数: .mixin-flex(row;center;center;nowrap);
+*/
+/* 全局color变量 */
+@COLOR_0: #000000;
+@COLOR_BC: #151c1d;
+@COLOR_THEME: #87cd00;
+@COLOR_F: #ffffff;
+@COLOR_9: #999999;
+@COLOR_C: #cccccc;
+@COLOR_W: #ff99ff;
+@COLOR_6: #666666;
+@BORDER_RADIUS: 0.04rem; //4px边角
+@BOX_SHADOW: 0 0 0.08rem 0 @COLOR_THEME; //8px阴影
+@BOX_BORDER: 1px solid @COLOR_THEME; //1px边框
+
+// 宽高布局
+.w-h(@width: 100%, @height: 100%) {
+	width: @width;
+	height: @height;
+}
+
+/* 常用 flex */
+// flex布局
+.mixin-flex (@direction: row, @justify: flex-start, @align: center,  @wrap:nowrap) {
+	display: flex;
+	flex-direction: @direction; //主轴方向左
+	justify-content: @justify; //主轴对齐方向
+	align-items: @align; //交叉轴上的对齐
+	flex-wrap: @wrap; //是否换行
+}
+// 局中布局
+.flx-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+// 居中且有空白
+.flx-justify-between {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+// 居中对齐
+.flx-align-center {
+	display: flex;
+	align-items: center;
+}
+
+/* 边框 */
+// 圆角
+.border-radius {
+	border-radius: @BORDER_RADIUS;
+}
+// 阴影
+.box-shadow {
+	box-shadow: @BOX_SHADOW;
+}
+
+/* 清除浮动 */
+.clearfix::after {
+	display: block;
+	height: 0;
+	overflow: hidden;
+	clear: both;
+	content: "";
+}
+
+/* 文字单行省略号 */
+.sle {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+/* 文字多行省略号 */
+.mle {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+}
+
+/* 文字多了自動換行 */
+.break-word {
+	word-break: break-all;
+	word-wrap: break-word;
+}
+
+/* page switch animation 页面切换动画 */
+.fade-enter {
+	opacity: 0;
+	transform: translateX(-30px);
+}
+.fade-enter-active,
+.fade-exit-active {
+	opacity: 1;
+	transition: all 0.2s ease-out;
+	transform: translateX(0);
+}
+.fade-exit {
+	opacity: 0;
+	transform: translateX(30px);
+}
+
+/* scroll bar 滚动条 */
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+	background-color: #ffffff;
+}
+::-webkit-scrollbar-thumb {
+	background-color: #dddee0;
+	border-radius: 20px;
+	box-shadow: inset 0 0 0 #ffffff;
+}

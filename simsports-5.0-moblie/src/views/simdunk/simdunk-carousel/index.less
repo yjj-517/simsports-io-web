@@ -1,0 +1,72 @@
+.simdunk-carousel {
+	padding-bottom: 0.32rem;
+	.carousel-box {
+		.swiper-box {
+			width: 3.9rem;
+			position: relative;
+			.rotation-img {
+				width: 3.9rem;
+			}
+			.carousel-download {
+				position: absolute;
+				bottom: 0.4rem;
+				left: 50%;
+				transform: translate(-50%, 0);
+				.download-box {
+					.mixin-flex (column,center,center,nowrap);
+					width: 1.8rem;
+					.icon-google {
+						margin-top: 0.1rem;
+					}
+				}
+				.download-button {
+					.w-h(1.96rem,0.52rem);
+					.mixin-flex (row,center,center,nowrap);
+					border: 0.02rem solid @COLOR_9;
+					border-radius: 0.08rem;
+					margin-top: 0.12rem;
+					&.open-soon {
+						background-color: @COLOR_6;
+					}
+					span {
+						font-size: 0.2rem;
+						font-family: Quantico;
+						font-weight: bold;
+						color: @COLOR_F;
+					}
+				}
+			}
+		}
+	}
+	.main {
+		.simdunk-game {
+			margin: 0.38rem auto 0;
+			padding: 0.16rem;
+			background-color: #252525;
+			.list-box {
+				.mixin-flex (row,space-between,center,nowrap);
+				margin-top: 0.12rem;
+				&:first-child {
+					margin: 0;
+				}
+				.list-box-title {
+					color: @COLOR_9;
+				}
+				.list-box-explain {
+					.mixin-flex (row,flex-end,center,nowrap);
+					.explain-img {
+						width: 0.16rem;
+						margin-left: 0.12rem;
+					}
+					.explain-text {
+						font-size: 0.12rem;
+						margin-left: 0.12rem;
+						border: 0.01rem solid #808080;
+						padding: 0.01rem 0.08rem;
+						border-radius: 0.08rem;
+					}
+				}
+			}
+		}
+	}
+}

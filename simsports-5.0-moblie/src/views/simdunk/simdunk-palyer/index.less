@@ -1,0 +1,38 @@
+.simdunk-palyer {
+	position: relative;
+	.palyer-bg-img {
+		width: 3.9rem;
+	}
+	.simdunk-palyer-box {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		.main {
+			.fillet-h2-title {
+				margin-top: 0.48rem;
+				text-align: left;
+			}
+			.simdunk-palyer-avatar {
+				margin: 0.32rem 0 0 0.08rem;
+				.avatar-box {
+					width: 0.5rem;
+					margin-top: 0.16rem;
+					cursor: pointer;
+					transition: transform 1s ease;
+					&.active {
+						transform: scale(1.2);
+						opacity: 1;
+					}
+				}
+			}
+			.fillet-diamond-button {
+				.w-h(1.56rem,0.4rem);
+				display: block;
+				margin: 5rem auto 0;
+				font-size: 0.18rem;
+				clip-path: polygon(0.1rem 0, 100% 0, 100% calc(100% - 0.1rem), calc(100% - 0.1rem) 100%, 0 100%, 0 0.1rem);
+			}
+		}
+	}
+}

@@ -1,0 +1,222 @@
+// 公用边距
+.main {
+	padding-left: 0.16rem;
+	padding-right: 0.16rem;
+}
+// home标题
+h2.home-h2-title {
+	font-size: 0.32rem;
+	font-family: Quantico;
+	color: @COLOR_THEME;
+	line-height: 0.32rem;
+	text-align: center;
+}
+// 公用标题 #87cd00
+h2.fillet-h2-title {
+	font-size: 0.2rem;
+	font-family: Quantico;
+	color: @COLOR_THEME;
+	line-height: 0.24rem;
+	text-align: center;
+}
+// 公用小标题-#FFF
+h3.fillet-h3-title {
+	font-size: 0.18rem;
+	font-family: Quantico;
+	color: @COLOR_F;
+	line-height: 0.24rem;
+	text-align: center;
+}
+// 公用小标题- #87cd00
+h3.fillet-h3-title01 {
+	font-size: 0.18rem;
+	font-family: Quantico;
+	color: @COLOR_THEME;
+	line-height: 0.24rem;
+	text-align: center;
+}
+// 公用小标题-#87cd00
+h3.fillet-h3-title02 {
+	font-size: 0.18rem;
+	color: @COLOR_THEME;
+}
+// 公用段落文字-#fff-12px
+p.fillet-paragraph-text01 {
+	font-size: 0.12rem;
+	color: @COLOR_F;
+	line-height: 0.18rem;
+}
+// 公用段落文字-#999-14px
+p.fillet-paragraph-text02 {
+	font-size: 0.14rem;
+	color: @COLOR_9;
+	line-height: 0.2rem;
+}
+// 公用段落文字-#999-12px-bold
+p.fillet-paragraph-text03 {
+	font-size: 0.12rem;
+	color: @COLOR_9;
+	line-height: 0.18rem;
+	font-weight: bold;
+}
+// 公用段落文字-#ccc
+p.fillet-paragraph-text04 {
+	font-size: 0.14rem;
+	color: @COLOR_C;
+	line-height: 0.2rem;
+}
+// 公用段落文字-#666
+p.fillet-paragraph-text05 {
+	font-size: 0.12rem;
+	color: @COLOR_6;
+	line-height: 0.14rem;
+}
+// 公用菱形按钮
+button.fillet-diamond-button {
+	background-color: @COLOR_THEME;
+	color: @COLOR_F;
+	width: 100%;
+	font-family: Quantico;
+	font-weight: bold;
+	&:hover {
+		background-image: linear-gradient(to right, #6ba300, #40b218);
+	}
+}
+button.fillet-diamond-button-disabled {
+	background-color: #676767;
+	color: @COLOR_F;
+	width: 100%;
+	font-family: Quantico;
+	font-weight: bold;
+	&:hover {
+		cursor: not-allowed;
+	}
+}
+// 公用圆角按钮
+button.fillet-button {
+	.w-h(3.26rem, 0.48rem);
+	color: @COLOR_F;
+	background-color: @COLOR_THEME;
+	font-size: 0.18rem;
+	font-family: Quantico;
+	font-weight: bold;
+	border-radius: @BORDER_RADIUS;
+	&:hover {
+		box-shadow: @BOX_SHADOW;
+	}
+	// 加载loading大小
+	.icon-loading-button {
+		font-size: 0.2rem;
+	}
+}
+// 公用圆角按钮小号
+button.fillet-button-trumpet {
+	padding: 0.07rem 0;
+	color: @COLOR_F;
+	background-color: @COLOR_THEME;
+	font-size: 0.14rem;
+	border-radius: 0.04rem;
+	&:hover {
+		color: @COLOR_THEME;
+		background-color: @COLOR_F;
+	}
+}
+// 公用圆角按钮小号空心
+button.fillet-button-hollow {
+	padding: 0.06rem 0;
+	color: @COLOR_THEME;
+	border: 0.01rem solid @COLOR_THEME;
+	font-size: 0.14rem;
+	border-radius: 0.04rem;
+	&:hover {
+		color: @COLOR_F;
+		background-color: @COLOR_THEME;
+	}
+}
+// 外部链接-#87cd00
+.external-link {
+	font-size: 0.12rem;
+	font-weight: bold;
+	color: @COLOR_THEME;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+// 外部链接-#666666
+.external-link01 {
+	.mixin-flex (row,flex-start,center,nowrap);
+	span {
+		font-size: 0.12rem;
+		color: @COLOR_6;
+		&:nth-of-type(1) {
+			margin: 0.04rem;
+			.w-h(0.04rem,0.04rem);
+			background-color: @COLOR_6;
+		}
+		&:nth-of-type(2) {
+			margin-left: 0.04rem;
+		}
+	}
+	&:hover {
+		span {
+			&:nth-of-type(1) {
+				background-color: @COLOR_F;
+			}
+			&:nth-of-type(2) {
+				color: @COLOR_F;
+			}
+		}
+	}
+}
+// line
+.dividing-line {
+	height: 0.01rem;
+	background-image: linear-gradient(90deg, rgba(#fff, 0), rgba(#fff, 0.6), rgba(#fff, 0));
+}
+// ant-design-mobile
+// mask-弹出层样式
+#mask-dialog-box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 2.86rem;
+	background-color: #292c2c;
+	padding: 0.12rem 0.2rem;
+	border-radius: 0.2rem;
+	// 右侧下滑框
+	overflow: auto;
+	max-height: 70vh;
+	scrollbar-width: thin; /* Firefox */
+	-ms-overflow-style: none; /* IE and Edge */
+	&::-webkit-scrollbar {
+		display: none; /* Safari 和 Chrome */
+	}
+	.mask-dialog-close {
+		display: flex;
+		justify-content: flex-end;
+		.close-img {
+			margin: 0.06rem -0.06rem 0.06rem 0.06rem;
+			.w-h(0.12rem,0.13rem);
+			background: url("/src/assets/imgs/layout/icon-close.png") no-repeat;
+			background-size: 100%;
+			&:hover {
+				background: url("/src/assets/imgs/layout/icon-close-change.png") no-repeat;
+				background-size: 100%;
+			}
+		}
+	}
+	.mask-box-content {
+		margin-top: 0.04rem;
+		.mixin-flex (column,flex-start,center,nowrap);
+		.simsports-logo {
+			.w-h(0.46rem,0.6rem);
+			background: url("/src/assets/imgs/logo/simsports-logo.svg") no-repeat;
+			background-size: 100%;
+		}
+		.mask-box-text {
+			margin-top: 0.24rem;
+			text-align: center;
+		}
+	}
+}

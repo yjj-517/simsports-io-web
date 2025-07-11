@@ -1,0 +1,65 @@
+footer {
+	padding: 0.24rem 0 0.48rem;
+	.simsports-img {
+		width: 1.58rem;
+		margin: 0 auto;
+	}
+	.footer-link-box {
+		.mixin-flex (row,space-between,flex-start,nowrap);
+		margin: 0.32rem 0.34rem 0;
+		.footer-link-box-list {
+			.mixin-flex (column,flex-start,flex-start,nowrap);
+			.list-title {
+				font-weight: bold;
+			}
+			.list-link-box {
+				.mixin-flex (row,space-between,flex-start,nowrap);
+				gap: 0.3rem;
+				.list-link {
+					margin-top: 0.2rem;
+					color: @COLOR_9;
+				}
+			}
+		}
+	}
+	.applink-box {
+		.applink {
+			display: block;
+			margin: 0.32rem auto 0;
+			.w-h(1.52rem,0.38rem);
+			clip-path: polygon(0.12rem 0, 100% 0, 100% calc(100% - 0.12rem), calc(100% - 0.12rem) 100%, 0 100%, 0 0.12rem);
+			.link-play {
+				.mixin-flex(row,center,center,nowrap);
+				color: @COLOR_F;
+				.link-img {
+					.w-h(0.24rem,0.24rem);
+				}
+			}
+		}
+	}
+
+	.community-box {
+		margin-top: 0.56rem;
+		.mixin-flex (row,center,center,nowrap);
+		.medium-img {
+			width: 0.24rem;
+			margin: 0 0.14rem;
+		}
+	}
+	.dividing-line01 {
+		margin: 0.24rem 0.16rem 0;
+	}
+	.userInformation-box {
+		margin-top: 0.24rem;
+		.mixin-flex (row,center,center,nowrap);
+		.userInformation-link {
+			font-size: 0.12rem;
+			color: @COLOR_6;
+			margin: 0 0.08rem;
+		}
+	}
+	.fillet-paragraph-text05-margin {
+		margin-top: 0.24rem;
+		text-align: center;
+	}
+}

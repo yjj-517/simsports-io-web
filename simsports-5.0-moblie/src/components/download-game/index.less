@@ -1,0 +1,24 @@
+.download-game {
+	position: fixed;
+	top: 30%;
+	right: 0.04rem;
+	z-index: 100;
+	.game-down-img {
+		width: 1.2rem;
+	}
+	.download-box {
+		position: absolute;
+		width: 1rem;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: 0.08rem;
+		.mixin-flex (column,center,center,nowrap);
+		.google-play {
+			cursor: pointer;
+		}
+		.ios-play {
+			margin-top: 0.06rem;
+			cursor: pointer;
+		}
+	}
+}

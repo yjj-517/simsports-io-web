@@ -1,0 +1,35 @@
+.home-top {
+	position: relative;
+	.home-bg {
+		width: 3.9rem;
+	}
+	.home-top-box {
+		position: absolute;
+		top: 1.24rem;
+		left: 50%;
+		transform: translateX(-50%);
+		.simsports-img-white {
+			width: 3.22rem;
+		}
+		.home-top-title {
+			width: 2.86rem;
+			text-align: center;
+			line-height: 0.24rem;
+			margin: 0.2rem auto 0;
+			font-size: 0.16rem;
+		}
+		.applink {
+			display: block;
+			margin: 0.32rem auto 0;
+			.w-h(1.52rem,0.38rem);
+			clip-path: polygon(0.12rem 0, 100% 0, 100% calc(100% - 0.12rem), calc(100% - 0.12rem) 100%, 0 100%, 0 0.12rem);
+			.link-play {
+				.mixin-flex(row,center,center,nowrap);
+				color: @COLOR_F;
+				.link-img {
+					.w-h(0.24rem,0.24rem);
+				}
+			}
+		}
+	}
+}
