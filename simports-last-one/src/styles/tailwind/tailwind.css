@@ -1,0 +1,47 @@
+/* tailwind.css */
+
+/* 引入tailwind-css */
+@import "tailwindcss";
+/* 引入或者自定义深色模式 */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* 添加或者重置项目的自定义设计标记 */
+@theme {
+	/* 使用 --属性-*： initial 完全禁用所有默认值并定义默认值 */
+	/* 使用 --属性-*： 属性值 自定义或者覆盖默认值 */
+
+	/* responsive-design  */
+	--breakpoint-*: initial;
+	--breakpoint-sm: 480px;
+	--breakpoint-md: 768px;
+	--breakpoint-lg: 976px;
+	--breakpoint-xl: 1440px;
+
+	/* family */
+	--font-primary: Nunito, Arial;
+	--font-regular: Arial;
+
+	/* color */
+	--color-primary: #2a4cff;
+	--color-regular: ;
+	--color-secondary: #27ae60;
+	--color-disabled: #e64800;
+	/* color-bg */
+	--color-bgcolor-100: #181818;
+	--color-bgcolor-200: #8e8e8e;
+	/* color-text */
+	--color-text-100: #8d8d8d;
+
+	/* 定义动画关键帧 */
+	--animate-fade-in-scale: fade-in-scale 0.3s ease-out;
+	@keyframes fade-in-scale {
+		0% {
+			opacity: 0;
+			transform: scale(0.95);
+		}
+		100% {
+			opacity: 1;
+			transform: scale(1);
+		}
+	}
+}
