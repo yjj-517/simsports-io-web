@@ -1,0 +1,47 @@
+/* global.css */
+
+@layer base {
+	/* 自定义默认的标签或tailwindcss中未定义的样式--能直接使用自定义的默认值 */
+	/* 重置的默认标签--如去除基本默认样式的可以放在这里--个人放在common.css中 */
+	/* --alpha 规范颜色的透明度 */
+
+	:root {
+		/* layout-header-height */
+		--sm-layout-header-height: 3.5rem;
+		/* layout-footer-height */
+		--sm-layout-footer-height: 10rem;
+		/* layout-height */
+		--sm-layout-height: 10.5rem;
+	}
+	/* h3标签 */
+	h2 {
+		@apply font-bold;
+	}
+	/* 滚动条 */
+	.trove-scrollbar {
+		overflow-y: auto;
+		overflow-x: auto;
+		scrollbar-width: thin;
+		scrollbar-color: --alpha(var(--color-bgcolor-200) / 80%) var(--color-bgcolor-100);
+	}
+}
+
+/* 自定义公共组件和公共样式 */
+@layer components {
+	/* 布局 */
+	/* 居中盒子 */
+	section.main {
+		@apply w-full max-w-7xl mx-auto relative px-4 md:px-8 lg:px-12 overflow-hidden;
+	}
+}
+
+/* 自定义实用程序添加到您的项目中 */
+/* flex-居中 */
+@utility flex-center {
+	@apply flex justify-center items-center;
+}
+@utility flex-between {
+	@apply flex justify-between items-center;
+}
+
+/* 还有许多指令可在官网自行学习 */
