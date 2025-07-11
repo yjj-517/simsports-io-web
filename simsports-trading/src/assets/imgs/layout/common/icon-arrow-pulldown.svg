@@ -1,0 +1,13 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="icon_arrow_pulldown">
+<g id="Mask group">
+<mask id="mask0_1124_7665" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+<rect id="Rectangle 212" width="24" height="24" fill="#87CD00"/>
+</mask>
+<g mask="url(#mask0_1124_7665)">
+<path id="Rectangle 211" d="M6.34314 10.0355L12 15.6924L17.6569 10.0355" 
+stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+</svg>

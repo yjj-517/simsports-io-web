@@ -1,0 +1,9 @@
+.carousel-box {
+	padding-bottom: 30px;
+}
+.carousel-box .ant-carousel .slick-dots {
+	bottom: -20px !important;
+}
+.carousel-box .ant-carousel .slick-active button {
+	background: #87cd00 !important;
+}

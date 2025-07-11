@@ -1,0 +1,67 @@
+@layer base {
+	:root {
+		/* 字体 */
+		--sm-font-family-1: Quantico, Arial;
+		--sm-font-family-2: Arial;
+		/* theme-color */
+		--sm-color-fg-1: #ffffff;
+		--sm-color-fg-2: #000000;
+		--sm-color-fg-3: #87cd00;
+		--sm-color-fg-4: #00b4cd;
+		--sm-color-fg-5: #ff99ff;
+		/* background-color */
+		--sm-color-bg-1: #151c1d;
+		--sm-color-bg-2: #333333;
+		--sm-color-bg-3: #202519;
+		--sm-color-bg-4: #263436;
+		--sm-color-bg-5: #324548;
+		--sm-color-bg-6: #1c2627;
+		--sm-color-bg-7: #1a2224;
+		--sm-color-bg-8: #808080;
+		--sm-color-bg-9: #262f30;
+		--sm-color-bg-10: #202a2c;
+		/* text-color */
+		--sm-color-text-1: #999999;
+		--sm-color-text-2: #cccccc;
+		--sm-color-text-3: #666666;
+		/* height */
+		--sm-header-height: 80px;
+		--sm-footer-height: 216px;
+		/* width */
+		--sm-menu-width: 240px;
+		--sm-menu-width-put: 72px;
+	}
+	/* 滚动条 */
+	.trove-scrollbar {
+		overflow-y: auto;
+		overflow-x: auto;
+		scrollbar-width: thin;
+		scrollbar-color: var(--sm-color-bg-2) var(--sm-color-bg-1);
+	}
+}
+/* 居中盒子 */
+section.main {
+	@apply w-full h-full max-w-[1440px] mx-auto overflow-hidden relative px-5 md:px-8 lg:px-16;
+}
+/* 按钮 */
+button.fillet-button {
+	@apply flex justify-center items-center bg-gradient-to-r font-Quantico font-bold from-primary to-secondary rounded-lg hover:bg-gradient-to-r hover:from-[#00CD83] hover:to-[#008FCD];
+}
+button.fillet-button-norounded {
+	@apply flex justify-center items-center bg-gradient-to-r font-Quantico font-bold from-primary to-secondary hover:bg-gradient-to-r hover:from-[#00CD83] hover:to-[#008FCD];
+}
+button.fillet-button-trumpet {
+	@apply flex justify-center items-center bg-bgcolor-500 font-Quantico font-bold text-primary rounded-lg border-[1px] border-bgcolor-500 hover:border-primary;
+}
+button.fillet-button-trumpet-white {
+	@apply flex justify-center items-center font-Quantico font-bold text-white rounded-lg border-[1px] border-text-100 hover:border-primary;
+}
+button.fillet-button-trumpet-disabled {
+	@apply flex justify-center items-center font-Quantico font-bold text-text-100 rounded-lg border-[1px] border-text-300 hover:cursor-not-allowed;
+}
+button.fillet-button-hollow {
+	@apply flex justify-center items-center bg-bgcolor-500 font-Quantico font-bold text-primary rounded border-[1px] border-bgcolor-500 hover:border-primary;
+}
+.scale-img {
+	@apply w-full transition-transform hover:scale-[1.1];
+}
